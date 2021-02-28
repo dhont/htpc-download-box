@@ -40,7 +40,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${ROOT}/config/sonarr:/config # config files
-      - ${ROOT}/complete/tv:/tv # tv shows folder
+      - ${ROOT}/tv:/tv # tv shows folder
       - ${ROOT}/downloads:/downloads # download folder
 
   radarr:
@@ -55,7 +55,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${ROOT}/config/radarr:/config # config files
-      - ${ROOT}/complete/movies:/movies # movies folder
+      - ${ROOT}/movies:/movies # movies folder
       - ${ROOT}/downloads:/downloads # download folder
 
   plex:
