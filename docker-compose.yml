@@ -12,6 +12,7 @@ services:
     volumes:
       - ${ROOT}/downloads:/downloads # downloads folder
       - ${ROOT}/config/deluge:/config # config files
+      - ${ROOT}/complete:/complete # tv shows folder
 
   jackett:
     container_name: jackett
