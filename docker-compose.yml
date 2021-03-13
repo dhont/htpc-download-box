@@ -3,7 +3,7 @@ services:
   deluge:
     container_name: deluge
     image: linuxserver/deluge:latest
-    restart: unless-stopped
+    restart: allways
     network_mode: host
     environment:
       - PUID=${PUID} # default user id, defined in .env
@@ -17,7 +17,7 @@ services:
   jackett:
     container_name: jackett
     image: linuxserver/jackett:latest
-    restart: unless-stopped
+    restart: allways
     network_mode: host
     environment:
       - PUID=${PUID} # default user id, defined in .env
